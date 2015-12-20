@@ -16,8 +16,6 @@ static NSString* kTwitterAuthAPI = @"https://api.twitter.com/oauth2/token";
 
 @interface Twitter_App_Only_Auth()
 
-@property (nonatomic, retain) NSString *accessToken;
-
 @end
 
 @implementation Twitter_App_Only_Auth
