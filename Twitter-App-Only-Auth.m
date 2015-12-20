@@ -7,9 +7,9 @@
 //
 
 #import "Twitter-App-Only-Auth.h"
-
-static NSString* kConsumerKey = @"30SybZNHZvNOsMj0kwEegqwjA";
-static NSString* kConsumerSecretKey = @"mLWGpyjlKW7rtGcdiv77AXias9PBJopsy0FIyt5XvarwKrGj24";
+// Create an App at https://apps.twitter.com and replace the keys with your Application Keys
+static NSString* kConsumerKey = @"YOUR_CONSUMER_KEY";
+static NSString* kConsumerSecretKey = @"YOUR_CONSUMER_SECRET_KEY";
 static NSString* kTwitterAuthAPI = @"https://api.twitter.com/oauth2/token";
 
 #define kRequestTimeOutInterval 30.0
@@ -21,7 +21,7 @@ static NSString* kTwitterAuthAPI = @"https://api.twitter.com/oauth2/token";
 @implementation Twitter_App_Only_Auth
 
 /* Steps to get Access_Token:
- 1. Create application on you "dev.twitter" acount
+ 1. Create an application on your "https://apps.twitter.com" acount
  2. Get "kConsumerKey" and "kConsumerSecretKey"
  3. Get getBase64EncodedBearerToken
  4. Make "kTwitterAuthAPI" call with "Basic Authorization"
